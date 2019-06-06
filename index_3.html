@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+      }
+      body{
+				background-color: #F4F3F1;
+        font-family:"맑은 고딕", "돋움";
+        font-size:100%
+			}
+      ul {
+        list-style-type:none;
+      }
+      #menu a:link {
+        text-decoration:none;
+        color:#000000;
+      }
+      #menu a:visited {
+        color:#000000;
+      }
+      #menu a:hover {
+        color: white; background-color: black;
+      }
+
+      #logo {
+        margin-top:30px;
+        margin-bottom:10px;
+      }
+      #page {
+        width:980px;
+        margin:0 auto;
+      }
+      aside {
+        color:#000000;
+      }
+      aside#menu {
+        color:#000000;
+      }
+      aside#menu li {
+        padding:10px;
+        margin:10px 10px 0 0;
+        background-color:#FFFFFF;
+        border:solid 3px #000000;
+        text-align:center;
+        font-size:0.9em;
+      }
+      section#main {
+        height:600px;
+        margin:20px 0 0 0;
+        padding:15px;
+        background-color:#FFFFFF;
+        border:solid 3px #000000;
+      }
+      section#main p {
+        padding:5px;
+        font-size:0.9em;
+        line-height:130%;
+        text-align:center;
+      }
+      footer {
+        margin-top:8px;
+        height:100px;
+        padding:10px;
+        clear:both;
+        text-align:right;
+        font-size:0.9em;
+      }
+      [class*="c_"] {
+        float:left;
+        padding:10px;
+      }
+      /* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+      [class*="c_"] {
+        width:100%;
+      }
+      /* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+      @media only screen and (min-width:600px) {
+        .c_m_1 {width:8.33%;}
+        .c_m_2 {width:16.66%;}
+        .c_m_3 {width:25%;}
+        .c_m_4 {width:33.33%;}
+        .c_m_5 {width:41.66%;}
+        .c_m_6 {width:50%;}
+        .c_m_7 {width:58.33%;}
+        .c_m_8 {width:66.66%;}
+        .c_m_9 {width:75%;}
+        .c_m_10 {width:83.33%;}
+        .c_m_11 {width:91.66%;}
+        .c_m_12 {width:100%;}
+      }
+      /* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+      @media only screen and (min-width:768px) {
+        .c_1 {width:8.33%;}
+        .c_2 {width:16.66%;}
+        .c_3 {width:25%;}
+        .c_4 {width:33.33%;}
+        .c_5 {width:41.66%;}
+        .c_6 {width:50%;}
+        .c_7 {width:58.33%;}
+        .c_8 {width:66.66%;}
+        .c_9 {width:75%;}
+        .c_10 {width:83.33%;}
+        .c_11 {width:91.66%;}
+        .c_12 {width:100%;}
+      }
+      #member_form {
+        width:500px;
+        margin:70px 0 0 100px;
+        font-family:"맑은 고딕";
+        font-size:12px;
+        color:#000000;
+        padding-top:20px;
+        padding-bottom:30px;
+        border-top:solid 1px #000000;
+        border-bottom:solid 1px #000000;
+      }
+      .cols li {
+        display:inline-block;
+        margin-top:10px;
+      }
+      .cols li.col1 {
+        width:100px;
+        text-align:right;
+      }
+      .cols li.col2 {
+        width:350px;
+      }
+      .cols li.col2 input.hp {
+        width:35px;
+      }
+      #intro {
+        vertical-align:top;
+      }
+      #send {
+        margin-top:30px;
+        margin-left:300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <header class="c_12">
+            <img id="logo" src="title.png" width="460px">
+      </header>
+
+      <aside id="menu" class="c_m_3 c_3">
+        <ul>
+          <li><a href="index.html"><b>HOME</b></a></li>
+          <li><a href="index_1.html"><b>PROFILE</b></a></li>
+          <li><a href="index_2.html"><b>WORKS</b></a></li>
+          <li><a href="index_3.html"><b>CONTACT</b></a></li>
+        </ul>
+      </aside>
+
+      <section id="main" class="c_m_9 c_9">
+        <p><b>CONTACT ME</b></p>
+        <form>
+          <ul id="member_form">
+            <li>
+              <ul class="cols">
+                <li class="col1">이름</li>
+                <li class="col2"><input type="text"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="cols">
+                <li class="col1">이메일</li>
+                <li class="col2"><input type="text">@
+                <select id="email2">
+                  <option>선택</option>
+                  <option>naver.com</option>
+                  <option>hanmail.net</option>
+                  <option>gmail.com</option>
+                </select></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="cols">
+                <li class="col1">제목</li>
+                <li class="col2"><input type="text"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="cols">
+                <li class="col1" id="intro">메세지</li>
+                <li class="col2">
+                <textarea rows="10" cols="52"></textarea></li>
+              </ul>
+            </li>
+          </ul>
+        </form>
+        <div id="send">
+          <a href="#"><img src="send.png" width="100px"></a>
+        </div>
+      </section>
+
+      <footer class="c_12">
+        <b>COPYRIGHT(C) EUNBI ALL RIGHTS RESERVED</b>
+      </footer>
+    </div>
+  </body>
+</html>

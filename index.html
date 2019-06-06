@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+      }
+      body{
+				background-color: #F4F3F1;
+        font-family:"맑은 고딕", "돋움";
+        font-size:100%;
+			}
+      ul {
+        list-style-type:none;
+      }
+      a:link {
+        text-decoration:none;
+        color:#000000;
+      }
+      a:visited {
+        color:#000000;
+      }
+      a:hover {
+        color: white; background-color: black;
+      }
+
+      #logo {
+        margin-top:30px;
+        margin-bottom:10px;
+      }
+      #page {
+        width:980px;
+        margin:0 auto;
+      }
+      aside {
+        color:#000000;
+      }
+      aside#menu {
+        color:#000000;
+      }
+      aside#menu li {
+        padding:10px;
+        margin:10px 10px 0 0;
+        background-color:#FFFFFF;
+        border:solid 3px #000000;
+        text-align:center;
+        font-size:0.9em;
+      }
+      section#main {
+        height:600px;
+        margin:20px 0 0 0;
+        padding:0;
+        background-color:#F4F3F1;
+      }
+      section#main p {
+        padding-bottom: 5px;
+        font-size:0.9em;
+        line-height:130%;
+        margin-left: 100px;
+      }
+      footer {
+        margin-top:8px;
+        height:100px;
+        padding:10px;
+        clear:both;
+        text-align:right;
+        font-size:0.9em;
+      }
+      [class*="c_"] {
+        float:left;
+        padding:10px;
+      }
+      /* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+      [class*="c_"] {
+        width:100%;
+      }
+      /* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+      @media only screen and (min-width:600px) {
+        .c_m_1 {width:8.33%;}
+        .c_m_2 {width:16.66%;}
+        .c_m_3 {width:25%;}
+        .c_m_4 {width:33.33%;}
+        .c_m_5 {width:41.66%;}
+        .c_m_6 {width:50%;}
+        .c_m_7 {width:58.33%;}
+        .c_m_8 {width:66.66%;}
+        .c_m_9 {width:75%;}
+        .c_m_10 {width:83.33%;}
+        .c_m_11 {width:91.66%;}
+        .c_m_12 {width:100%;}
+      }
+      /* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+      @media only screen and (min-width:768px) {
+        .c_1 {width:8.33%;}
+        .c_2 {width:16.66%;}
+        .c_3 {width:25%;}
+        .c_4 {width:33.33%;}
+        .c_5 {width:41.66%;}
+        .c_6 {width:50%;}
+        .c_7 {width:58.33%;}
+        .c_8 {width:66.66%;}
+        .c_9 {width:75%;}
+        .c_10 {width:83.33%;}
+        .c_11 {width:91.66%;}
+        .c_12 {width:100%;}
+      }
+      #home_img {
+        margin-left:100px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <header class="c_12">
+            <img id="logo" src="title.png" width="460px">
+      </header>
+
+      <aside id="menu" class="c_m_3 c_3">
+        <ul>
+          <li><a href="index.html"><b>HOME</b></a></li>
+          <li><a href="index_1.html"><b>PROFILE</b></a></li>
+          <li><a href="index_2.html"><b>WORKS</b></a></li>
+          <li><a href="index_3.html"><b>CONTACT</b></a></li>
+        </ul>
+      </aside>
+
+      <section id="main" class="c_m_9 c_9">
+        <img id="home_img" src="home.gif">
+        <p><b>안녕하세요.</b></p>
+        <p><b>저는 항상 생각하고 고민하는 기획자, 이은비입니다.</b></p>
+        <p><b>저의 생각과 고민, 그리고 열정이 담긴 웹퍼블리싱 작업물들을 소개합니다.</b></p>
+        <br><br><br><br>
+        <p>더 많은 작업물이 궁금하시다면?</p>
+        <p>[ 010-3513-5516 ] 또는 [ mongmong8_8@naver.com ] 으로 연락주세요!</p>
+      </section>
+
+      <footer class="c_12">
+        <b>COPYRIGHT(C) EUNBI ALL RIGHTS RESERVED</b>
+      </footer>
+    </div>
+  </body>
+</html>
